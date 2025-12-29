@@ -1,0 +1,102 @@
+:root {
+  /* Brand Colors - Violet & Teal */
+  --primary: #6d28d9;
+  /* Violet 700 */
+  --primary-hover: #5b21b6;
+  /* Violet 800 */
+  --primary-light: #ddd6fe;
+  /* Violet 200 */
+
+  --secondary: #0d9488;
+  /* Teal 600 */
+  --secondary-hover: #0f766e;
+  --secondary-light: #ccfbf1;
+
+  --accent: #f59e0b;
+  /* Amber 500 */
+
+  /* Neutral Colors */
+  --bg-body: #f8fafc;
+  /* Slate 50 */
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  /* Slate 900 */
+  --text-muted: #64748b;
+  /* Slate 500 */
+  --border: #e2e8f0;
+  /* Slate 200 */
+
+  /* Semantic Colors */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #3b82f6;
+
+  /* Fun Gradients */
+  --gradient-primary: linear-gradient(135deg, #6d28d9 0%, #a855f7 100%);
+  --gradient-warm: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  --gradient-cool: linear-gradient(135deg, #0d9488 0%, #2dd4bf 100%);
+  --gradient-blue: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+
+  /* Spacing & Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+
+  /* Priority Colors (Light Mode Default) */
+  --bg-priority-low: #dcfce7;
+  --text-priority-low: #15803d;
+
+  --bg-priority-medium: #ffedd5;
+  --text-priority-medium: #c2410c;
+
+  --bg-priority-high: #fee2e2;
+  --text-priority-high: #b91c1c;
+}
+
+[data-theme="dark"] {
+  --bg-body: #0f172a;
+  /* Slate 900 */
+  --bg-card: #1e293b;
+  /* Slate 800 */
+  --text-main: #f8fafc;
+  /* Slate 50 */
+  --text-muted: #94a3b8;
+  /* Slate 400 */
+  --border: #334155;
+  /* Slate 700 */
+
+  --primary-light: #4c1d95;
+  /* Violet 900 */
+  --secondary-light: #134e4a;
+  /* Teal 900 */
+
+  /* Gradients (Dark Mode - slightly softer or same, but lets keep them vibrant) */
+  --gradient-primary: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
+
+
+  /* Priority Colors (Dark Mode) */
+  --bg-priority-low: #14532d;
+  /* Green 900 */
+  --text-priority-low: #86efac;
+  /* Green 300 */
+
+  --bg-priority-medium: #7c2d12;
+  /* Orange 900 */
+  --text-priority-medium: #fdba74;
+  /* Orange 300 */
+
+  --bg-priority-high: #7f1d1d;
+  /* Red 900 */
+  --text-priority-high: #fca5a5;
+  /* Red 300 */
+}

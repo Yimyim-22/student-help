@@ -1,0 +1,196 @@
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-widget {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.widget-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.db-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.db-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem;
+    background-color: var(--bg-body);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.db-item:hover {
+    transform: translateX(4px);
+}
+
+.db-time {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 0.9rem;
+    min-width: 80px;
+}
+
+.db-content {
+    flex: 1;
+}
+
+.db-main-text {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.db-sub-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.stat-card {
+    background-color: var(--bg-body);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.upcoming-badge {
+    background-color: #fef3c7;
+    color: #d97706;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: auto;
+    font-weight: 700;
+}
+
+/* Gradient Cards */
+.card-gradient-blue {
+    background: var(--gradient-blue);
+    border: none;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+.card-gradient-warm {
+    background: var(--gradient-warm);
+    border: none;
+    box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.2);
+}
+
+.card-gradient-cool {
+    background: var(--gradient-cool);
+    border: none;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+}
+
+.glass-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s ease;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.glass-item:last-child {
+    margin-bottom: 0;
+}
+
+.glass-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Text Utilities for Gradients */
+.text-white {
+    color: #ffffff;
+}
+
+.text-white-alpha {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.urgent-tag {
+    background-color: #fff;
+    color: #ef4444;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-sm);
+}
+
+/* Exam Preview Card */
+.exam-preview-card {
+    background-color: var(--primary-light);
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.text-primary-dark {
+    color: var(--primary-hover);
+    font-weight: 700;
+}
+
+.empty-widget {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

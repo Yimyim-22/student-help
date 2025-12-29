@@ -1,0 +1,114 @@
+.assignments-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-select {
+    min-width: 150px;
+}
+
+.assignment-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.assignment-card.completed {
+    opacity: 0.6;
+    background-color: var(--bg-body);
+}
+
+.assignment-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.assignment-checkbox:checked {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.assignment-checkbox:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.assignment-details {
+    flex: 1;
+}
+
+.assignment-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-main);
+}
+
+.assignment-card.completed .assignment-title {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.assignment-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.priority-badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.priority-high {
+    background-color: var(--bg-priority-high);
+    color: var(--text-priority-high);
+}
+
+.priority-medium {
+    background-color: var(--bg-priority-medium);
+    color: var(--text-priority-medium);
+}
+
+.priority-low {
+    background-color: var(--bg-priority-low);
+    color: var(--text-priority-low);
+}
+
+/* Dark mode overrides would go here, handled by transparency usually or specific variables */
